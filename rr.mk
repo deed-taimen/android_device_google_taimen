@@ -2,7 +2,7 @@
 TARGET_SCREEN_HEIGHT := 2880
 TARGET_SCREEN_WIDTH := 1440
 
-# Inherit some common AICP stuff.
+# Inherit some common RR stuff.
 $(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
 # Inherit device configuration
@@ -18,9 +18,9 @@ TARGET_MANUFACTURER := LG
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 
-# AICP Device Maintainers
+# RR Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Hector C (Zips)"
+    DEVICE_MAINTAINERS="pimpmaneaton"
 
 
 PRODUCT_BUILD_PROP_OVERRIDES += \

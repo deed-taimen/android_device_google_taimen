@@ -36,10 +36,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
   device/google/taimen/nexus.xml:system/etc/sysconfig/nexus.xml
 
-# ModemService
-PRODUCT_COPY_FILES += \
-  device/google/taimen/modemservice.xml:system/etc/sysconfig/modemservice.xml
-
 # Audio
 PRODUCT_COPY_FILES += \
     device/google/taimen/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \

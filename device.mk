@@ -47,9 +47,9 @@ PRODUCT_COPY_FILES += \
     device/google/taimen/init-taimen.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init-$(PRODUCT_HARDWARE).rc \
     device/google/taimen/init.taimen.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(PRODUCT_HARDWARE).usb.rc
 
-# Google Markup
-PRODUCT_COPY_FILES += \
-    device/google/taimen/Markup/Markup.apk:system/priv-app/Markup/Markup.apk
+# Google Markup App
+PRODUCT_PACKAGES += \
+    Markup
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=560 \

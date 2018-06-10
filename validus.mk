@@ -2,14 +2,14 @@
 TARGET_SCREEN_HEIGHT := 2880
 TARGET_SCREEN_WIDTH := 1440
 
-# Inherit some common RR stuff.
-$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+# Inherit some common Validus stuff.
+$(call inherit-product, vendor/validus/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/taimen/aosp_taimen.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := rr_taimen
+PRODUCT_NAME := validus_taimen
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 2 XL
 TARGET_MANUFACTURER := LGE

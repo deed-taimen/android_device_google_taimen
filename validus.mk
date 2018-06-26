@@ -24,3 +24,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     DEVICE_MAINTAINERS="deedwar"
 
 $(call inherit-product-if-exists, vendor/google/taimen/taimen-vendor.mk)
+$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)

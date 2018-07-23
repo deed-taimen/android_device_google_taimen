@@ -131,7 +131,4 @@
      <string-array name="config_disabledUntilUsedPreinstalledCarrierApps">
          <item>com.google.android.apps.tycho</item>
      </string-array>
-
-    <!-- Whether device has screen with higher aspect ratio -->
-    <bool name="config_haveHigherAspectRatioScreen">true</bool>
 </resources>

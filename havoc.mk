@@ -2,8 +2,8 @@
 TARGET_SCREEN_HEIGHT := 2880
 TARGET_SCREEN_WIDTH := 1440
 
-# Inherit some common stuff.
-$(call inherit-product, vendor/validus/config/common_full_phone.mk)
+# Inherit some common Havoc OS stuff.
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/taimen/aosp_taimen.mk)
@@ -11,7 +11,7 @@ $(call inherit-product, device/google/taimen/aosp_taimen.mk)
 -include device/google/wahoo/device-lineage.mk
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := validus_taimen
+PRODUCT_NAME := havoc_taimen
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel 2 XL
 TARGET_MANUFACTURER := LG

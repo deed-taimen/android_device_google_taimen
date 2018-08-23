@@ -27,7 +27,7 @@ include device/google/wahoo/BoardConfig.mk
 BOARD_BOOTIMAGE_PARTITION_SIZE := 41943040
 
 # sepolicy
-BOARD_SEPOLICY_DIRS += device/google/taimen/sepolicy
+#BOARD_SEPOLICY_DIRS += device/google/taimen/sepolicy
 
 -include vendor/google_devices/taimen/proprietary/BoardConfigVendor.mk
 

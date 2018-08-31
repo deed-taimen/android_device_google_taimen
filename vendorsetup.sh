@@ -14,6 +14,4 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_taimen.mk \
-    $(LOCAL_DIR)/lineage_taimen.mk
+add_lunch_combo lineage_taimen-userdebug

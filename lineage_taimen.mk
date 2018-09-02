@@ -2,18 +2,15 @@
 TARGET_SCREEN_HEIGHT := 2880
 TARGET_SCREEN_WIDTH := 1440
 
-
-# Inherit Carbon GSM telephony parts
+# Inherit Lineage GSM telephony parts
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/taimen/aosp_taimen.mk)
 
--include device/google/taimen/device-carbon.mk
-
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_taimen
-PRODUCT_BRAND := google
+PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel 2 XL
 TARGET_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := false

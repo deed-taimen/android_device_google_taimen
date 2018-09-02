@@ -113,13 +113,13 @@ endif
 
 #IMU calibration
 PRODUCT_PROPERTY_OVERRIDES += \
-  persist.config.calibration_fac=/persist/sensors/calibration/calibration.xml
+    persist.config.calibration_fac=/persist/sensors/calibration/calibration.xml
 
 # Vibrator HAL
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.vibrator.hal.click.duration=10 \
-  ro.vibrator.hal.tick.duration=4 \
-  ro.vibrator.hal.heavyclick.duration=12
+    ro.vibrator.hal.click.duration=10 \
+    ro.vibrator.hal.tick.duration=4 \
+    ro.vibrator.hal.heavyclick.duration=12
 
 # Enable Perfetto traced
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -129,3 +129,39 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_phase_offset_ns=5000000
 
+# Fingerprint sensor type
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.fingerprint=fpc
+
+# IMS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager.xml \
+    com.android.ims.rcsmanager \
+    RcsService \
+    PresencePolling
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += device/google/taimen/overlay-lineage
+
+# Pixel Experience
+PRODUCT_COPY_FILES += \
+    device/google/taimen/nexus.xml:system/etc/sysconfig/nexus.xml
+
+# ModemService
+PRODUCT_COPY_FILES += \
+    device/google/taimen/whitelist_modemservice.xml:system/etc/sysconfig/whitelist_modemservice.xml
+
+# Tethering
+PRODUCT_PROPERTY_OVERRIDES += \
+    net.tethering.noprovisioning=true
+
+# UI
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.use_fifo_ui=1
+
+# Update engine
+PRODUCT_PACKAGES += brillo_update_payload
+
+# Privileged app permissions
+PRODUCT_COPY_FILES += \
+    device/google/taimen/privapp-permissions-taimen.xml:system/etc/permissions/privapp-permissions-taimen.xml

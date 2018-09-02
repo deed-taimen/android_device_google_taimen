@@ -14,6 +14,14 @@
 # limitations under the License.
 #
 
+# Custom board config for taimen
+# GPS
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
+BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
+
+# Time services
+BOARD_USES_QC_TIME_SERVICES := true
+
 TARGET_BOOTLOADER_BOARD_NAME := taimen
 DEFAULT_LOW_PERSISTENCE_MODE_BRIGHTNESS := 0x0000008c
 
@@ -39,4 +47,4 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 105
 # for all future devices.
 BOARD_KERNEL_CMDLINE += androidboot.dtbo_idx=12
 
--include device/google/taimen/BoardConfigCarbon.mk
+-include vendor/google/taimen/BoardConfigVendor.mk

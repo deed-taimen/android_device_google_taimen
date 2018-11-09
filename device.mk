@@ -129,3 +129,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_phase_offset_ns=5000000
 
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext
+ PRODUCT_BOOT_JARS += \
+    telephony-ext
